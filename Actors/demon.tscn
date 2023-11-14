@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://wy3pbyg5yh3s"]
+
+[ext_resource type="Script" path="res://Actors/Player.gd" id="1_4q8vw"]
+[ext_resource type="Texture2D" uid="uid://dxkq28ql2m6su" path="res://Assets/Sprites/demon.png" id="1_qb586"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8d50v"]
+size = Vector3(0.0176244, 0.0288726, 0.0191167)
+
+[node name="Sprite3D" type="CharacterBody3D"]
+script = ExtResource("1_4q8vw")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+pixel_size = 0.0005
+billboard = 1
+shaded = true
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("1_qb586")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+shape = SubResource("BoxShape3D_8d50v")
