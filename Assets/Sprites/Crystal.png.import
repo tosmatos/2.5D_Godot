@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxkq28ql2m6su"
-path="res://.godot/imported/demon.png-e61bf00162bfd003af1ea3a08e37c777.ctex"
+uid="uid://d17we8dtgungl"
+path="res://.godot/imported/Crystal.png-af7a23ecc901d86b6a5c40c4a55810a3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/demon.png"
-dest_files=["res://.godot/imported/demon.png-e61bf00162bfd003af1ea3a08e37c777.ctex"]
+source_file="res://Assets/Sprites/Crystal.png"
+dest_files=["res://.godot/imported/Crystal.png-af7a23ecc901d86b6a5c40c4a55810a3.ctex"]
 
 [params]
 
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1

@@ -2,26 +2,27 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxkq28ql2m6su"
-path="res://.godot/imported/demon.png-e61bf00162bfd003af1ea3a08e37c777.ctex"
+uid="uid://dagfqk3pavfvj"
+path.s3tc="res://.godot/imported/Stone.png-106e7e8a74fb23899919c6fe52f9de02.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/demon.png"
-dest_files=["res://.godot/imported/demon.png-e61bf00162bfd003af1ea3a08e37c777.ctex"]
+source_file="res://Assets/Sprites/Stone.png"
+dest_files=["res://.godot/imported/Stone.png-106e7e8a74fb23899919c6fe52f9de02.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=false
+mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""

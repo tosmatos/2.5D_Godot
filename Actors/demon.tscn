@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://wy3pbyg5yh3s"]
+[gd_scene load_steps=5 format=3 uid="uid://wy3pbyg5yh3s"]
 
 [ext_resource type="Script" path="res://Actors/Player.gd" id="1_4q8vw"]
 [ext_resource type="Texture2D" uid="uid://dxkq28ql2m6su" path="res://Assets/Sprites/demon.png" id="1_qb586"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8d50v"]
 size = Vector3(0.0176244, 0.0288726, 0.0191167)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_dvlkq"]
+radius = 0.354619
 
 [node name="Sprite3D" type="CharacterBody3D"]
 script = ExtResource("1_4q8vw")
@@ -20,3 +23,11 @@ texture = ExtResource("1_qb586")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
 shape = SubResource("BoxShape3D_8d50v")
+
+[node name="PickupRange" type="Area3D" parent="." groups=["liftable"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PickupRange"]
+shape = SubResource("SphereShape3D_dvlkq")
+
+[connection signal="body_entered" from="PickupRange" to="." method="_on_pickup_range_body_entered"]
+[connection signal="body_exited" from="PickupRange" to="." method="_on_pickup_range_body_exited"]
