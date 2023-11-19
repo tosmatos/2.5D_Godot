@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://c46wcgg50f8a5"]
+[gd_scene load_steps=9 format=3 uid="uid://c46wcgg50f8a5"]
 
 [ext_resource type="Texture2D" uid="uid://6tl61yovjhfc" path="res://Assets/Textures/Ground/Don't Starve Surface Rocks.png" id="1_2xt8k"]
 [ext_resource type="PackedScene" uid="uid://wy3pbyg5yh3s" path="res://Actors/demon.tscn" id="2_oeqja"]
 [ext_resource type="PackedScene" uid="uid://c0qbn3csomcby" path="res://Actors/cube.tscn" id="3_k2ra8"]
-[ext_resource type="PackedScene" uid="uid://btsi7b5mu58w0" path="res://Actors/item.tscn" id="4_wldqu"]
+[ext_resource type="PackedScene" uid="uid://d3si3xjj5b4ab" path="res://Actors/Items/wood.tscn" id="4_6ieb1"]
+[ext_resource type="PackedScene" uid="uid://dxw1pobb0xdv6" path="res://Actors/Items/rock.tscn" id="5_bvmmw"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3xy0i"]
 albedo_texture = ExtResource("1_2xt8k")
@@ -35,13 +36,19 @@ shape = SubResource("BoxShape3D_seulk")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0184221, 1.12961, -0.00251663)
 
 [node name="Camera3D" type="Camera3D" parent="Sprite3D"]
-transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0.161412, 0.930479, 1.31965)
+transform = Transform3D(1, 0, 0, 0, 0.512043, 0.85896, 0, -0.85896, 0.512043, 0.161412, 1.29663, 1.00804)
+fov = 90.0
 
 [node name="Cube" parent="." instance=ExtResource("3_k2ra8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.993507, -2.5835)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.685882, 0.727713, 0, -0.727713, 0.685882, 0.0648739, 2.54411, 3.33507)
+light_energy = 2.0
+shadow_enabled = true
 
-[node name="Item" parent="." instance=ExtResource("4_wldqu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.916936, 0.426903, 0)
+[node name="Item2" parent="." instance=ExtResource("4_6ieb1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.38287, 0.629235, 0)
+
+[node name="Item" parent="." instance=ExtResource("5_bvmmw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.04359, 0.629235, 0)

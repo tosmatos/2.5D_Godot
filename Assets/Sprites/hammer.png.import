@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvoywlc0sr0n6"
-path.s3tc="res://.godot/imported/Wood.png-98afb0bb38429b129c99acbbcc41a864.s3tc.ctex"
+uid="uid://hw1ucvdghhvi"
+path.s3tc="res://.godot/imported/hammer.png-81ba584325d8b2657e9f81aee3868ee6.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Sprites/Wood.png"
-dest_files=["res://.godot/imported/Wood.png-98afb0bb38429b129c99acbbcc41a864.s3tc.ctex"]
+source_file="res://Assets/Sprites/hammer.png"
+dest_files=["res://.godot/imported/hammer.png-81ba584325d8b2657e9f81aee3868ee6.s3tc.ctex"]
 
 [params]
 

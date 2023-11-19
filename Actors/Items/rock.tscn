@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxw1pobb0xdv6"]
+
+[ext_resource type="PackedScene" uid="uid://btsi7b5mu58w0" path="res://Actors/item.tscn" id="1_02wd2"]
+
+[node name="Item" instance=ExtResource("1_02wd2")]
+item_name = "rock"

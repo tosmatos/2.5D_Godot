@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://btsi7b5mu58w0"]
+[gd_scene load_steps=4 format=3 uid="uid://btsi7b5mu58w0"]
 
+[ext_resource type="Script" path="res://Actors/item.gd" id="1_3738o"]
 [ext_resource type="Texture2D" uid="uid://dagfqk3pavfvj" path="res://Assets/Sprites/Stone.png" id="1_d05ur"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ai52f"]
@@ -8,6 +9,7 @@ size = Vector3(0.225633, 0.145437, 0.165934)
 [node name="Item" type="RigidBody3D" groups=["liftable"]]
 max_contacts_reported = 10
 contact_monitor = true
+script = ExtResource("1_3738o")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 pixel_size = 0.0005
