@@ -36,7 +36,7 @@ shape = SubResource("BoxShape3D_seulk")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0184221, 1.12961, -0.00251663)
 
 [node name="Camera3D" type="Camera3D" parent="Sprite3D"]
-transform = Transform3D(1, 0, 0, 0, 0.512043, 0.85896, 0, -0.85896, 0.512043, 0.161412, 1.29663, 1.00804)
+transform = Transform3D(1, 0, 0, 0, 0.5, 0.866026, 0, -0.866026, 0.5, 0.161412, 1.29663, 1.00804)
 fov = 90.0
 
 [node name="Cube" parent="." instance=ExtResource("3_k2ra8")]
